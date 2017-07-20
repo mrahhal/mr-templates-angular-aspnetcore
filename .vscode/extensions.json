@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "alefragnani.bookmarks",
+    "Angular.ng-template",
+    "CoenraadS.bracket-pair-colorizer",
+    "DmitryDorofeev.empty-indent",
+    "ecmel.vscode-html-css",
+    "EditorConfig.editorconfig",
+    "eg2.tslint",
+    "eg2.vscode-npm-script",
+    "HookyQR.beautify",
+    "johnpapa.angular2",
+    "mkaufman.htmlhint",
+    "msjsdiag.debugger-for-chrome",
+    "rbbit.typescript-hero",
+    "robertohuertasm.vscode-icons",
+    "robinbentley.sass-indented"
+  ]
+}
