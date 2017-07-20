@@ -7,7 +7,7 @@
   "name": "Angular with AspNetCore",
   "identity": "mr-templates-angular-aspnetcore",
   "groupIdentity": "mr-templates-angular-aspnetcore",
-  "shortName": "mrngaspnetcore",
+  "shortName": "ng-aspnetcore",
   "tags": {
     "language": "TypeScript"
   },
