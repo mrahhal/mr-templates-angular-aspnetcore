@@ -2,6 +2,7 @@ const path = require('path');
 const pkg = require('../package.json');
 const util = require('./util');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 const prod = util.hasProcessFlag('webpack.prod.js');
 
@@ -11,6 +12,14 @@ const cssLoader = {
 		minimize: prod,
 		sourceMap: !prod,
 		url: false
+	}
+};
+
+const postcssLoader = {
+	loader: 'postcss-loader',
+	options: {
+		sourceMap: !prod,
+		plugins: () => [autoprefixer('last 2 versions')]
 	}
 };
 
@@ -58,7 +67,7 @@ module.exports = {
 			use: ['to-string-loader', cssLoader],
 		}, {
 			test: /\.scss$/,
-			use: ['to-string-loader', cssLoader, sassLoader]
+			use: ['to-string-loader', cssLoader, postcssLoader, sassLoader]
 		}]
 	},
 	plugins: [
