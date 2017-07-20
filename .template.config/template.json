@@ -1,0 +1,35 @@
+{
+  "author": "Mohammad Rahhal (@mrahhal)",
+  "classifications": [
+    "angular",
+    "aspnetcore"
+  ],
+  "name": "Angular with AspNetCore",
+  "identity": "mr-templates-angular-aspnetcore",
+  "groupIdentity": "mr-templates-angular-aspnetcore",
+  "shortName": "mrngaspnetcore",
+  "tags": {
+    "language": "TypeScript"
+  },
+  "sourceName": "mr-templates-angular-aspnetcore",
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "include": [
+        "**/*"
+      ],
+      "exclude": [
+        "**/node_modules/**",
+        ".git/**",
+        ".template.config/**",
+        ".vs/**",
+        "[Bb]in/**",
+        "[Oo]bj/**",
+        "*.user",
+        "package-lock.json",
+        "install.cmd"
+      ]
+    }
+  ]
+}
