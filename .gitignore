@@ -1,0 +1,12 @@
+.vs/
+obj/
+bin/
+dist/
+node_modules/
+bower_components/
+wwwroot/js/
+wwwroot/css/
+wwwroot/fonts/
+*.dat
+*.user
+debug.log

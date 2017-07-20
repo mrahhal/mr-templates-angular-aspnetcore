@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/*.user": true,
+    "**/*.map": true,
+    "**/node_modules": true,
+    "wwwroot/dist": true,
+    ".vs": true
+  },
+  "tslint.autoFixOnSave": true
+}
