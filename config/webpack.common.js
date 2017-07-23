@@ -6,8 +6,6 @@ const autoprefixer = require('autoprefixer');
 
 const prod = util.hasProcessFlag('webpack.prod.js');
 
-const tsLoader = prod ? '@ngtools/webpack' : 'ts-loader';
-
 const cssLoader = {
 	loader: 'css-loader',
 	options: {
@@ -50,7 +48,8 @@ module.exports = {
 	},
 	output: {
 		path: util.root('wwwroot/js'),
-		filename: '[name].js'
+		filename: '[name].js',
+		publicPath: '/js/'
 	},
 	resolve: {
 		extensions: ['.js', '.ts', '.tsx'],
@@ -60,7 +59,7 @@ module.exports = {
 		exprContextCritical: false,
 		rules: [{
 			test: /\.ts(x?)$/,
-			use: [tsLoader, 'angular2-template-loader']
+			use: ['ts-loader', 'angular2-template-loader', 'angular-router-loader']
 		}, {
 			test: /\.html$/,
 			use: ['raw-loader', htmlMinifyLoader]
