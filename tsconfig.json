@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["es2015", "dom"],
+    "moduleResolution": "node",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "outDir": "./wwwroot/dist/",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
