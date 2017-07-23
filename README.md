@@ -6,7 +6,7 @@
 
 - `dotnet restore`: restore nuget packages
 - `npm i`: install npm packages
-- `npm run dev`: starts gulp + webpack in watch mode, and starts the dotnet dev server
+- `npm start`: starts gulp + webpack in watch mode, and starts the dotnet dev server
 
 ### Building for prod:
 
