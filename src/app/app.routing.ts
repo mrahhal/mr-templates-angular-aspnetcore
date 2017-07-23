@@ -1,5 +1,5 @@
-import { homeStates } from './home/home.routing';
+import { loadNgModule, Ng2StateDeclaration } from '@uirouter/angular';
 
-export const appStates = [
-	...homeStates
+// Lazily loaded routes
+export const appStates: Ng2StateDeclaration[] = [
 ];

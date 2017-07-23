@@ -1,31 +1,30 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { UIRouterModule } from '@uirouter/angular';
 
 import { App } from './app.component';
 import { appStates } from './app.routing';
-import { Home } from './home/home.component';
-import { HomeService } from './home/home.service';
+import { HomeModule } from './home/home.module';
 import { routerConfigFn } from './router.config';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
 	imports: [
+		BrowserModule,
+		HttpModule,
 		UIRouterModule.forRoot({
 			states: appStates,
 			otherwise: { state: 'home' },
-			config: routerConfigFn,
+			config: routerConfigFn
 		}),
-		BrowserModule,
-		FormsModule,
-		HttpModule,
+		SharedModule,
+		HomeModule,
 	],
-	declarations: [App, Home],
+	declarations: [App],
 	providers: [
 		{ provide: APP_BASE_HREF, useValue: '/' },
-		HomeService
 	],
 	bootstrap: [App]
 })
