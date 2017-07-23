@@ -13,6 +13,7 @@
     "url": "https://github.com/mrahhal/mr-templates-angular-aspnetcore"
   },
   "scripts": {
+    "start": "npm run dev",
     "dev": "concurrently \"gulp && npm run start:webpack\" \"set ASPNETCORE_ENVIRONMENT=Development&& dotnet run\"",
     "start:webpack": "webpack -w",
     "build": "gulp && webpack --config config/webpack.prod.js",
