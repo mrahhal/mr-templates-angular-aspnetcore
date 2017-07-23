@@ -16,7 +16,8 @@
     "dev": "concurrently \"gulp && npm run start:webpack\" \"set ASPNETCORE_ENVIRONMENT=Development&& dotnet run\"",
     "start:webpack": "webpack -w",
     "build": "gulp && webpack --config config/webpack.prod.js",
-    "build:dev": "gulp && webpack"
+    "build:dev": "gulp && webpack",
+    "open": "start http://localhost:12659"
   },
   "dependencies": {
     "@angular/common": "^4.3.1",
