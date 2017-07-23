@@ -3,6 +3,7 @@ const pkg = require('../package.json');
 const util = require('./util');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const AotPlugin = require('@ngtools/webpack').AotPlugin;
 
 const prod = util.hasProcessFlag('webpack.prod.js');
 
@@ -58,7 +59,7 @@ module.exports = {
 		exprContextCritical: false,
 		rules: [{
 			test: /\.ts(x?)$/,
-			use: ['ts-loader', 'angular2-template-loader']
+			use: ['@ngtools/webpack', 'angular2-template-loader']
 		}, {
 			test: /\.html$/,
 			use: ['raw-loader', htmlMinifyLoader]
@@ -79,6 +80,10 @@ module.exports = {
 			$: 'jquery',
 			jquery: 'jquery',
 			'window.jQuery': 'jquery'
+		}),
+		new AotPlugin({
+			tsConfigPath: util.root('tsconfig.aot.json'),
+			entryModule: util.root('src/app/app.module#AppModule')
 		})
 	]
 };
