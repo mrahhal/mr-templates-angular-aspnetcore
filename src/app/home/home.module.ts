@@ -9,7 +9,7 @@ import { HomeService } from './home.service';
 @NgModule({
 	imports: [
 		SharedModule,
-		UIRouterModule.forChild({ states: homeStates })
+		UIRouterModule.forChild({ states: homeStates }),
 	],
 	exports: [],
 	declarations: [Home],

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
 	selector: 'admin',
-	templateUrl: './admin.html'
+	templateUrl: './admin.html',
 })
 export class AdminComponent implements OnInit {
 	constructor() { }

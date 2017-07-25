@@ -7,7 +7,7 @@ import { HomeService } from './home.service';
 @Component({
 	selector: 'home-component',
 	templateUrl: './home.html',
-	styleUrls: ['./home.scss']
+	styleUrls: ['./home.scss'],
 })
 export class Home {
 	name: string;

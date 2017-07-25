@@ -5,5 +5,5 @@ import { Home } from './home.component';
 export const homeStates: Ng2StateDeclaration[] = [{
 	name: 'home',
 	url: '/',
-	component: Home
+	component: Home,
 }];

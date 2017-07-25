@@ -4,7 +4,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 	selector: 'app-root',
 	templateUrl: './app.html',
 	styleUrls: ['./sass/app.scss'],
-	encapsulation: ViewEncapsulation.None
+	encapsulation: ViewEncapsulation.None,
 })
 export class App {
 	constructor() {

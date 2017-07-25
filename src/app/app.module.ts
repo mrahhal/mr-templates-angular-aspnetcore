@@ -17,7 +17,7 @@ import { SharedModule } from './shared/shared.module';
 		UIRouterModule.forRoot({
 			states: appStates,
 			otherwise: { state: 'home' },
-			config: routerConfigFn
+			config: routerConfigFn,
 		}),
 		SharedModule,
 		HomeModule,
@@ -26,6 +26,6 @@ import { SharedModule } from './shared/shared.module';
 	providers: [
 		{ provide: APP_BASE_HREF, useValue: '/' },
 	],
-	bootstrap: [App]
+	bootstrap: [App],
 })
 export class AppModule { }

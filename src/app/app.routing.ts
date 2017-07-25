@@ -4,5 +4,5 @@ import { Ng2StateDeclaration } from '@uirouter/angular';
 export const appStates: Ng2StateDeclaration[] = [{
 	name: 'admin.**',
 	url: '/admin',
-	loadChildren: './admin/admin.module#AdminModule'
+	loadChildren: './admin/admin.module#AdminModule',
 }];

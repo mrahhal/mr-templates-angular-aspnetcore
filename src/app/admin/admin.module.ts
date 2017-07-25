@@ -8,7 +8,7 @@ import { adminStates } from './admin.routing';
 @NgModule({
 	imports: [
 		UIRouterModule.forChild({ states: adminStates }),
-		SharedModule
+		SharedModule,
 	],
 	exports: [],
 	declarations: [AdminComponent],

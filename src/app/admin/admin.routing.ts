@@ -5,5 +5,5 @@ import { AdminComponent } from './admin.component';
 export const adminStates: Ng2StateDeclaration[] = [{
 	name: 'admin',
 	url: '/admin',
-	component: AdminComponent
+	component: AdminComponent,
 }];
