@@ -10,5 +10,8 @@
     "wwwroot/dist": true,
     ".vs": true
   },
+  "search.exclude": {
+    "wwwroot": true
+  },
   "tslint.autoFixOnSave": true
 }
