@@ -6,7 +6,7 @@ import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
 import '@uirouter/core';
 import '@uirouter/angular';
+import 'rxjs';
 import 'jquery';
 import 'lodash';
 import 'moment';
-import 'rxjs';

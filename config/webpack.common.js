@@ -73,7 +73,7 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.optimize.CommonsChunkPlugin({
-			name: ['vendor', 'polyfills']
+			names: ['vendor', 'polyfills']
 		}),
 		new webpack.ProvidePlugin({
 			jQuery: 'jquery',
