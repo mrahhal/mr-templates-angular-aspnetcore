@@ -1,6 +1,6 @@
 import { APP_BASE_HREF } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { UIRouterModule } from '@uirouter/angular';
 
@@ -13,7 +13,7 @@ import { SharedModule } from './shared/shared.module';
 @NgModule({
 	imports: [
 		BrowserModule,
-		HttpModule,
+		HttpClientModule,
 		UIRouterModule.forRoot({
 			states: appStates,
 			otherwise: { state: 'home' },
