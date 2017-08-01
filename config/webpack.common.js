@@ -2,6 +2,7 @@ const path = require('path');
 const pkg = require('../package.json');
 const util = require('./util');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const autoprefixer = require('autoprefixer');
 
 const prod = util.hasProcessFlag('webpack.prod.js');
@@ -72,6 +73,7 @@ module.exports = {
 		}]
 	},
 	plugins: [
+		// new BundleAnalyzerPlugin(),
 		new webpack.optimize.CommonsChunkPlugin({
 			names: ['vendor', 'polyfills']
 		}),
