@@ -19,7 +19,7 @@
     "build": "gulp && webpack --config config/webpack.prod.js",
     "build:dev": "gulp && webpack",
     "open": "start http://localhost:12659",
-    "tslint": "tslint \"src/**/*.ts\" --force"
+    "lint": "tslint \"src/**/*.ts\" --force"
   },
   "dependencies": {
     "@angular/common": "^4.3.1",
