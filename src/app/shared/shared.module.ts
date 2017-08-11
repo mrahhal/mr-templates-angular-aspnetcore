@@ -14,6 +14,7 @@ import { UIRouterModule } from '@uirouter/angular';
 		CommonModule,
 		FormsModule,
 		ReactiveFormsModule,
+		UIRouterModule,
 	],
 	declarations: [],
 	providers: [],

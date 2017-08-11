@@ -7,6 +7,7 @@ import { UIRouterModule } from '@uirouter/angular';
 import { App } from './app.component';
 import { appStates } from './app.routing';
 import { HomeModule } from './home/home.module';
+import { LayoutModule } from './layout/layout.module';
 import { routerConfigFn } from './router.config';
 import { SharedModule } from './shared/shared.module';
 
@@ -20,9 +21,12 @@ import { SharedModule } from './shared/shared.module';
 			config: routerConfigFn,
 		}),
 		SharedModule,
+		LayoutModule,
 		HomeModule,
 	],
-	declarations: [App],
+	declarations: [
+		App,
+	],
 	providers: [
 		{ provide: APP_BASE_HREF, useValue: '/' },
 	],
