@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "taskName": "lint",
+      "command": "npm run lint",
+      "type": "shell",
+      "problemMatcher": "$tslint5"
+    }
+  ]
+}
