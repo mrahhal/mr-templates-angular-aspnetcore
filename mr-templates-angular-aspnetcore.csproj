@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
+    <RootNamespace>Server</RootNamespace>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
