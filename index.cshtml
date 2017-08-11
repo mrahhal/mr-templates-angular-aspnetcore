@@ -4,6 +4,8 @@
 
 @inject IHostingEnvironment HostingEnvironment
 
+@model Microsoft.AspNetCore.Html.HtmlString
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +38,8 @@
 
   <script>
     window.initialData = {
-      environment: '@HostingEnvironment.EnvironmentName'
+      environment: '@HostingEnvironment.EnvironmentName',
+      config: JSON.parse('@Model')
     };
   </script>
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as moment from 'moment';
 
+import config from '../config';
 import environment from '../environment';
 import { HomeService } from './home.service';
 
@@ -10,12 +11,14 @@ import { HomeService } from './home.service';
 })
 export class Home {
 	name: string;
-	environment: string;
 	time: string;
+	environment: string;
+	config: AppConfig;
 
 	constructor(private home: HomeService) {
 		this.name = home.message;
-		this.environment = environment;
 		this.time = moment().subtract(325, 'minutes').fromNow();
+		this.environment = environment;
+		this.config = config;
 	}
 }
