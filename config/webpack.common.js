@@ -36,7 +36,7 @@ const htmlMinifyLoader = {
 	options: {
 		dom: {
 			lowerCaseAttributeNames: false,
-			lowerCaseTags: false,
+			lowerCaseTags: false
 		}
 	}
 };
