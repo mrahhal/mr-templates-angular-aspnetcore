@@ -10,4 +10,4 @@ wwwroot/fonts/
 *.dat
 *.user
 debug.log
-appsettings*.json
+appsettings.*.json
