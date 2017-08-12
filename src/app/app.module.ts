@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UIRouterModule } from '@uirouter/angular';
 
 import { App } from './app.component';
-import { appStates } from './app.routing';
+import { APP_STATES } from './app.routing';
 import { HomeModule } from './home/home.module';
 import { LayoutModule } from './layout/layout.module';
 import { routerConfigFn } from './router.config';
@@ -16,7 +16,7 @@ import { SharedModule } from './shared/shared.module';
 		BrowserModule,
 		HttpClientModule,
 		UIRouterModule.forRoot({
-			states: appStates,
+			states: APP_STATES,
 			otherwise: { state: 'home' },
 			config: routerConfigFn,
 		}),

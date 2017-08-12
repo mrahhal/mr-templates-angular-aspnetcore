@@ -3,11 +3,11 @@ import { UIRouterModule } from '@uirouter/angular';
 
 import { SharedModule } from '../shared/shared.module';
 import { AdminComponent } from './admin.component';
-import { adminStates } from './admin.routing';
+import { ADMIN_STATES } from './admin.routing';
 
 @NgModule({
 	imports: [
-		UIRouterModule.forChild({ states: adminStates }),
+		UIRouterModule.forChild({ states: ADMIN_STATES }),
 		SharedModule,
 	],
 	exports: [],
