@@ -16,11 +16,16 @@ const cssLoader = {
 	}
 };
 
+const postcssLoaderPlugins = [];
+if (prod) {
+	postcssLoaderPlugins.push(autoprefixer('last 2 versions'));
+}
+
 const postcssLoader = {
 	loader: 'postcss-loader',
 	options: {
 		sourceMap: !prod,
-		plugins: () => [autoprefixer('last 2 versions')]
+		plugins: () => postcssLoaderPlugins
 	}
 };
 
