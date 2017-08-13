@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
 	templateUrl: './admin.html',
 })
-export class AdminComponent implements OnInit {
+export class Admin implements OnInit {
 	constructor() { }
 
 	ngOnInit() { }

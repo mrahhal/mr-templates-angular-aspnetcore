@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { UIRouterModule } from '@uirouter/angular';
 
 import { SharedModule } from '../shared/shared.module';
-import { AdminComponent } from './admin.component';
+import { Admin } from './admin.component';
 import { ADMIN_STATES } from './admin.routing';
 
 @NgModule({
@@ -10,8 +10,8 @@ import { ADMIN_STATES } from './admin.routing';
 		UIRouterModule.forChild({ states: ADMIN_STATES }),
 		SharedModule,
 	],
-	exports: [],
-	declarations: [AdminComponent],
-	providers: [],
+	declarations: [
+		Admin,
+	],
 })
 export class AdminModule { }
