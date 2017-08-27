@@ -10,6 +10,7 @@
     "EditorConfig.editorconfig",
     "eg2.tslint",
     "eg2.vscode-npm-script",
+    "formulahendry.auto-rename-tag",
     "HookyQR.beautify",
     "johnpapa.angular2",
     "mkaufman.htmlhint",
