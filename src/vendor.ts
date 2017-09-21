@@ -14,6 +14,7 @@ import 'rxjs/Observable';
 import 'rxjs/Subject';
 import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/observable/fromPromise';
+import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/debounceTime';
